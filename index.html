@@ -1,0 +1,961 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Vibrant Hauling Logistics | Professional Florida Auto Transport & Freight</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Hauling in all of Florida. Routes starting in Palm Beach and Martin counties. Open-air vehicle moving, hotshot services, and general freight. Text or call (561) 460-1160. USDOT 4433029." />
+		<meta name="theme-color" content="#0F141C">
+		
+		<!-- Favicon & Touch Icons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/site.webmanifest">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+
+			gtag('config', 'G-XXXXXXXXXX');
+		</script>
+
+		<style>
+			:root {
+				--primary: #f35650; /* Vibrant Red */
+				--primary-hover: #D91D20;
+				--bg-body: #151a22; /* Dark Charcoal Base Background */
+				--bg-card: #272d35; /* Distinct Dark Card Fill */
+				--bg-card-hover: #1E2736;
+				--bg-input: #111722;
+				--border-light: #283243; /* Subtle Contrast Borders for Separation */
+				--text-dark: #FFFFFF; /* High Contrast White Headings */
+				--text-main: #94A3B8; /* Muted Slate Body Text */
+				--shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+				--shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+				--shadow-lg: 0 20px 35px -10px rgba(0, 0, 0, 0.7);
+				--max-width: 1200px;
+				--font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+			}
+
+			::-moz-selection {
+				background-color: var(--primary);
+				color: #FFFFFF;
+			}
+
+			::selection {
+				background-color: var(--primary);
+				color: #FFFFFF;
+			}
+
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				font-family: var(--font-stack);
+				line-height: 1.6;
+				color: var(--text-main);
+				background-color: var(--bg-body);
+			}
+
+			/* Layout Containers */
+			.container {
+				max-width: var(--max-width);
+				margin: 0 auto;
+				padding: 0 1.5rem;
+			}
+
+			/* Header & Sticky Nav Bar */
+			header {
+				background-color: var(--bg-card);
+				border-bottom: 1px solid var(--border-light);
+				box-shadow: var(--shadow-sm);
+				position: sticky;
+				top: 0;
+				z-index: 100;
+			}
+
+			.nav-wrapper {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0.85rem 0;
+			}
+
+			.logo-container {
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				transition: transform 0.25s ease;
+			}
+
+			.logo-container:hover {
+				transform: scale(1.02);
+			}
+
+			/* Header Logo - Always Visible */
+			.header-logo-img {
+				height: 65px;
+				width: auto;
+				max-width: 340px;
+				display: block;
+				filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.45));
+			}
+
+			nav {
+				display: flex;
+				align-items: center;
+			}
+
+			nav ul {
+				display: flex;
+				list-style: none;
+				gap: 2.25rem;
+				align-items: center;
+			}
+
+			nav a {
+				color: #CBD5E1;
+				text-decoration: none;
+				font-weight: 600;
+				font-size: 1rem;
+				transition: all 0.2s ease;
+				position: relative;
+			}
+
+			nav a:hover {
+				color: var(--primary);
+			}
+
+			/* Scrollspy Active State Rules for Text Links */
+			nav a:not(.btn-nav).active {
+				color: var(--primary) !important;
+				font-weight: 700;
+			}
+
+			nav a:not(.btn-nav).active::after {
+				content: '';
+				position: absolute;
+				bottom: -4px;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: var(--primary);
+				border-radius: 2px;
+			}
+
+			/* Nav Button Base Style */
+			.btn-nav {
+				background-color: var(--primary);
+				padding: 0.65rem 1.6rem;
+				border-radius: 6px;
+				color: #ffffff !important;
+				font-weight: 700;
+				transition: all 0.2s ease;
+				border: 2px solid transparent;
+			}
+
+			.btn-nav:hover {
+				background-color: var(--primary-hover);
+				transform: translateY(-1px);
+			}
+
+			/* Nav Button Active Style when Scrolled to #book */
+			.btn-nav.active {
+				background-color: var(--bg-card-hover) !important;
+				color: #ffffff !important;
+				border-color: var(--primary);
+				box-shadow: 0 0 12px rgba(243, 86, 80, 0.5);
+			}
+
+			/* Full Background Hero Section */
+			.hero {
+				padding: 5.5rem 0 6.5rem 0;
+				position: relative;
+				background: linear-gradient(rgba(15, 20, 28, 0.88), rgba(15, 20, 28, 0.88)), url('https://placehold.net/800x600.png');
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				border-bottom: 1px solid var(--border-light);
+				box-shadow: var(--shadow-sm);
+				scroll-margin-top: 110px;
+				text-align: center;
+			}
+
+			.hero-content {
+				max-width: 900px;
+				margin: 0 auto;
+			}
+
+			/* Prominent Large Hero Logo Above Text */
+			.hero-logo-wrapper {
+				margin-bottom: 2.25rem;
+			}
+
+			.hero-logo-img {
+				height: 175px;
+				width: auto;
+				max-width: 720px;
+				display: inline-block;
+				filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.75));
+			}
+
+			.hero-badge {
+				display: inline-block;
+				background-color: rgba(255, 42, 45, 0.2);
+				color: var(--primary);
+				border: 1px solid rgba(255, 42, 45, 0.4);
+				padding: 0.4rem 1.1rem;
+				border-radius: 20px;
+				font-size: 0.85rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				margin-bottom: 1.5rem;
+				backdrop-filter: blur(4px);
+			}
+
+			.hero h1 {
+				font-size: 3.75rem;
+				line-height: 1.1;
+				font-weight: 800;
+				margin-bottom: 1.5rem;
+				letter-spacing: -1.5px;
+				color: var(--text-dark);
+				text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+			}
+
+			.hero p {
+				font-size: 1.25rem;
+				color: #CBD5E1;
+				margin-bottom: 2.5rem;
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 680px;
+				text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+			}
+
+			.hero-actions {
+				display: flex;
+				gap: 1.25rem;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			.btn {
+				display: inline-block;
+				background-color: var(--primary);
+				color: #ffffff;
+				padding: 1.1rem 2.4rem;
+				border-radius: 6px;
+				font-weight: 700;
+				text-decoration: none;
+				font-size: 1.05rem;
+				border: none;
+				cursor: pointer;
+				box-shadow: var(--shadow-md);
+				transition: all 0.2s ease;
+			}
+
+			.btn:hover {
+				background-color: var(--primary-hover);
+				transform: translateY(-2px);
+				box-shadow: var(--shadow-lg);
+			}
+
+			.btn-secondary {
+				display: inline-block;
+				background-color: rgba(39, 45, 53, 0.6);
+				backdrop-filter: blur(4px);
+				color: #FFFFFF;
+				padding: 1.1rem 2rem;
+				border-radius: 6px;
+				font-weight: 700;
+				text-decoration: none;
+				font-size: 1rem;
+				border: 2px solid var(--border-light);
+				transition: all 0.2s ease;
+			}
+
+			.btn-secondary:hover {
+				border-color: var(--primary);
+				color: var(--primary);
+				background-color: rgba(39, 45, 53, 0.9);
+			}
+
+			.credential-callout {
+				margin-top: 2rem;
+				font-size: 0.95rem;
+				color: var(--text-main);
+			}
+
+			.credential-callout strong {
+				color: var(--text-dark);
+			}
+
+			/* Section Shared Styles */
+			section {
+				padding: 6rem 0;
+				scroll-margin-top: 40px;
+			}
+
+			.section-title {
+				font-size: 2.5rem;
+				font-weight: 800;
+				margin-bottom: 0.8rem;
+				color: var(--text-dark);
+				text-align: center;
+				letter-spacing: -1px;
+			}
+
+			.section-subtitle {
+				font-size: 1.1rem;
+				color: var(--text-main);
+				margin-bottom: 3.5rem;
+				max-width: 600px;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			/* Services Section - Card Layout with Dark Contrast */
+			.services-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+				gap: 2rem;
+			}
+
+			.service-card {
+				background-color: var(--bg-card);
+				border-radius: 12px;
+				border: 1px solid var(--border-light);
+				overflow: hidden;
+				box-shadow: var(--shadow-md);
+				transition: all 0.3s ease;
+			}
+
+			.service-card:hover {
+				transform: translateY(-5px);
+				box-shadow: var(--shadow-lg);
+				border-color: var(--primary);
+			}
+
+			.service-img {
+				width: 100%;
+				height: 200px;
+				object-fit: cover;
+				display: block;
+				background-color: var(--bg-body);
+			}
+
+			.service-body {
+				padding: 2rem;
+			}
+
+			.service-card h3 {
+				font-size: 1.35rem;
+				margin-bottom: 0.75rem;
+				color: var(--text-dark);
+				font-weight: 700;
+			}
+
+			.service-card p {
+				color: var(--text-main);
+				font-size: 0.95rem;
+			}
+
+			/* Features Grid - Clearly Defined Dark Cards */
+			.features-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 1.5rem;
+			}
+
+			.feature-item {
+				background-color: var(--bg-card);
+				padding: 2.5rem 2rem;
+				border-radius: 12px;
+				border: 1px solid var(--border-light);
+				box-shadow: var(--shadow-md);
+				transition: all 0.3s ease;
+			}
+
+			.feature-item:hover {
+				transform: scale(1.02);
+				border-color: var(--primary);
+			}
+
+			.feature-num {
+				font-size: 2rem;
+				font-weight: 800;
+				color: var(--primary);
+				margin-bottom: 1rem;
+				line-height: 1;
+			}
+
+			.feature-item h3 {
+				color: var(--text-dark);
+				margin-bottom: 0.75rem;
+				font-size: 1.25rem;
+				font-weight: 700;
+			}
+
+			.feature-item p {
+				color: var(--text-main);
+				font-size: 0.95rem;
+			}
+
+			/* Service Areas Section */
+			.area-wrapper {
+				display: grid;
+				grid-template-columns: 2fr 1fr;
+				gap: 2rem;
+			}
+
+			.area-content, .area-creds {
+				background-color: var(--bg-card);
+				padding: 3rem;
+				border-radius: 12px;
+				border: 1px solid var(--border-light);
+				box-shadow: var(--shadow-md);
+			}
+
+			.area-intro {
+				font-size: 1.2rem;
+				color: var(--text-dark);
+				font-weight: 600;
+				margin-bottom: 2rem;
+			}
+
+			.area-list {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 1.25rem;
+				list-style: none;
+			}
+
+			.area-list li {
+				font-weight: 600;
+				color: var(--text-dark);
+				padding-left: 1.75rem;
+				position: relative;
+			}
+
+			.area-list li::before {
+				content: "✓";
+				color: var(--primary);
+				font-weight: 900;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			.area-creds {
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.area-creds h4 {
+				font-size: 0.85rem;
+				color: var(--text-main);
+				text-transform: uppercase;
+				letter-spacing: 1.5px;
+				margin-bottom: 0.75rem;
+			}
+
+			.area-creds .usdot {
+				font-size: 2.8rem;
+				font-weight: 800;
+				color: var(--text-dark);
+				margin-bottom: 0.5rem;
+				letter-spacing: -1px;
+			}
+
+			.area-creds p {
+				color: var(--text-main);
+				font-size: 0.95rem;
+			}
+
+			/* Booking Form Container */
+			.booking-section {
+				background-color: var(--bg-body);
+			}
+
+			.form-wrapper {
+				background-color: var(--bg-card);
+				padding: 4rem;
+				border-radius: 16px;
+				border: 1px solid var(--border-light);
+				max-width: 850px;
+				margin: 0 auto;
+				box-shadow: var(--shadow-lg);
+			}
+
+			.form-group {
+				margin-bottom: 1.5rem;
+			}
+
+			.form-row {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 1.5rem;
+			}
+
+			.radio-group {
+				display: flex;
+				gap: 2rem;
+				align-items: center;
+				padding-top: 0.75rem;
+			}
+
+			.radio-option {
+				display: flex;
+				align-items: center;
+				gap: 0.6rem;
+				font-weight: 600;
+				cursor: pointer;
+				color: var(--text-dark);
+			}
+
+			.radio-option input[type="radio"] {
+				width: 18px;
+				height: 18px;
+				accent-color: var(--primary);
+			}
+
+			label {
+				display: block;
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+				font-size: 0.9rem;
+				color: var(--text-dark);
+			}
+
+			input, select, textarea {
+				width: 100%;
+				padding: 1rem;
+				border: 1px solid var(--border-light);
+				border-radius: 8px;
+				font-family: inherit;
+				font-size: 0.95rem;
+				background-color: var(--bg-input);
+				color: var(--text-dark);
+				transition: border-color 0.2s ease;
+			}
+
+			input:focus, select:focus, textarea:focus {
+				outline: none;
+				border-color: var(--primary);
+				box-shadow: 0 0 0 3px rgba(255, 42, 45, 0.2);
+			}
+
+			/* Elevated Footer */
+			footer {
+				background-color: var(--bg-card);
+				color: var(--text-main);
+				padding: 5rem 0 2.5rem 0;
+				border-top: 1px solid var(--border-light);
+			}
+
+			.footer-content {
+				display: grid;
+				grid-template-columns: 2fr 1fr;
+				gap: 4rem;
+				margin-bottom: 3rem;
+			}
+
+			.footer-about .logo-img {
+				height: 80px;
+				margin-bottom: 1.25rem;
+			}
+
+			.footer-creds {
+				margin-top: 1rem;
+				font-size: 0.85rem;
+				border-left: 2px solid var(--primary);
+				padding-left: 1rem;
+			}
+
+			.footer-creds strong {
+				color: var(--text-dark);
+			}
+
+			.footer-contact h4 {
+				color: var(--text-dark);
+				margin-bottom: 1.25rem;
+				font-size: 1.1rem;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+
+			.contact-link {
+				display: block;
+				color: var(--text-dark);
+				text-decoration: none;
+				margin-bottom: 0.75rem;
+				font-size: 1.1rem;
+				font-weight: 700;
+				transition: color 0.2s ease;
+			}
+
+			.contact-link:hover {
+				color: var(--primary);
+			}
+
+			.footer-social a {
+				color: var(--primary);
+				text-decoration: none;
+				font-weight: 700;
+			}
+
+			.footer-bottom {
+				text-align: center;
+				padding-top: 2rem;
+				border-top: 1px solid var(--border-light);
+				font-size: 0.85rem;
+			}
+
+			/* Mobile Responsive Rules */
+			@media (max-width: 900px) {
+				.area-wrapper, .footer-content {
+					grid-template-columns: 1fr;
+					gap: 3rem;
+				}
+			}
+
+			@media (max-width: 768px) {
+				section, .hero {
+					scroll-margin-top: 110px;
+				}
+				.hero {
+					padding: 4rem 0;
+				}
+				.hero-logo-img {
+					height: 105px;
+					max-width: 340px;
+				}
+				.nav-wrapper {
+					flex-direction: column;
+					gap: 0.75rem;
+					padding: 0.75rem 0;
+				}
+				.hero h1 {
+					font-size: 2.6rem;
+				}
+				.header-logo-img {
+					height: 50px;
+					max-width: 260px;
+				}
+				nav ul {
+					gap: 1rem;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+				.form-row {
+					grid-template-columns: 1fr;
+				}
+				.form-wrapper {
+					padding: 2.5rem 1.5rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container nav-wrapper">
+				<a href="#" class="logo-container">
+					<img src="images/logo.svg" alt="Vibrant Hauling Logistics Logo" class="header-logo-img">
+				</a>
+				<nav>
+					<ul>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#why-us">Why Us</a></li>
+						<li><a href="#areas">Areas</a></li>
+						<li><a href="#book" class="btn-nav">Book Transport</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section id="hero" class="hero">
+				<div class="container">
+					<div class="hero-content">
+						<!-- Big Centerpiece Hero Logo -->
+						<div class="hero-logo-wrapper">
+							<img src="images/banner.svg" alt="Vibrant Hauling Logistics Logo" class="hero-logo-img">
+						</div>
+
+						<span class="hero-badge">Hauling All of Florida</span>
+						<h1>You Need It Transported?</h1>
+						<p>Vibrant Hauling Logistics LLC provides open-air car hauling and freight transport across all of Florida, with daily routes starting in Palm Beach and Martin counties.</p>
+						<div class="hero-actions">
+							<a href="#book" class="btn">Book Transport Appointment</a>
+							<a href="tel:5614601160" class="btn-secondary">Text / Call (561) 460-1160</a>
+						</div>
+						<p class="credential-callout">Active Local Carrier | <strong>USDOT 4433029</strong></p>
+					</div>
+				</div>
+			</section>
+
+			<section id="services">
+				<div class="container">
+					<h2 class="section-title">Transport Solutions</h2>
+					<p class="section-subtitle">Specialized open-air hauling departing daily from Palm Beach & Martin County to anywhere in Florida.</p>
+					
+					<div class="services-grid">
+						<div class="service-card">
+							<img src="https://placehold.net/800x600.png" alt="Vehicle Transport" class="service-img">
+							<div class="service-body">
+								<h3>Vehicle Moving</h3>
+								<p>Safe, insured car hauler services using open-air trailers for dealerships, private sales, auctions, and personal vehicle relocation within Florida.</p>
+							</div>
+						</div>
+
+						<div class="service-card">
+							<img src="https://placehold.net/800x600.png" alt="Hotshot Services" class="service-img">
+							<div class="service-body">
+								<h3>Hotshot Services</h3>
+								<p>Expedited, time-sensitive delivery solutions utilizing flexible hotshot equipment for smaller loads and quick turnarounds.</p>
+							</div>
+						</div>
+
+						<div class="service-card">
+							<img src="https://placehold.net/800x600.png" alt="General Freight" class="service-img">
+							<div class="service-body">
+								<h3>General Cargo</h3>
+								<p>Reliable intrastate property transport for general freight suitable for open-trailer configurations throughout Florida.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="why-us">
+				<div class="container">
+					<h2 class="section-title">Built For Reliability</h2>
+					<p class="section-subtitle">A local South Florida carrier committed to direct communication, safety, and secure transport.</p>
+
+					<div class="features-grid">
+						<div class="feature-item">
+							<div class="feature-num">01</div>
+							<h3>Active Credentials</h3>
+							<p>Operating responsibly with active USDOT authority (4433029) and fully compliant status.</p>
+						</div>
+
+						<div class="feature-item">
+							<div class="feature-num">02</div>
+							<h3>Statewide Reach</h3>
+							<p>Primary routes starting in Palm Beach and Martin counties with daily reach across all of Florida.</p>
+						</div>
+
+						<div class="feature-item">
+							<div class="feature-num">03</div>
+							<h3>Fully Insured</h3>
+							<p>Treating every vehicle or cargo with care, protected by comprehensive transport insurance.</p>
+						</div>
+
+						<div class="feature-item">
+							<div class="feature-num">04</div>
+							<h3>Direct Booking</h3>
+							<p>Text or call us directly at (561) 460-1160 for updates or booking inquiries.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="areas">
+				<div class="container">
+					<h2 class="section-title">Primary Routes</h2>
+					<p class="section-subtitle">Headquartered in Martin County, serving daily intrastate routes.</p>
+
+					<div class="area-wrapper">
+						<div class="area-content">
+							<p class="area-intro">Frequent service routes delivering to:</p>
+							<ul class="area-list">
+								<li>Palm Beach County</li>
+								<li>Martin County</li>
+								<li>St. Lucie County</li>
+								<li>Broward County</li>
+								<li>Miami-Dade County</li>
+								<li>Orlando / Central FL</li>
+								<li>Tampa Bay Area</li>
+								<li>Jacksonville & Statewide</li>
+							</ul>
+						</div>
+						<div class="area-creds">
+							<h4>Authority Credentials</h4>
+							<p class="usdot">4433029</p>
+							<p>Florida Intrastate Only<br>Active Property Carrier</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="book" class="booking-section">
+				<div class="container">
+					<div class="form-wrapper">
+						<h2 class="section-title">Book Transport</h2>
+						<p class="section-subtitle">Submit your vehicle details and desired schedule below. We will contact you to confirm your details.</p>
+
+						<form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your transport booking request has been submitted to Vibrant Hauling Logistics.');">
+							
+							<!-- Contact Info -->
+							<div class="form-row">
+								<div class="form-group">
+									<label for="name">Full Name / Contact Person</label>
+									<input type="text" id="name" required placeholder="John Doe">
+								</div>
+								<div class="form-group">
+									<label for="phone">Phone Number</label>
+									<input type="tel" id="phone" required placeholder="(561) 460-1160">
+								</div>
+							</div>
+
+							<!-- Vehicle Details & Operability -->
+							<div class="form-row">
+								<div class="form-group">
+									<label for="vehicle">Vehicle Make, Model & Year</label>
+									<input type="text" id="vehicle" required placeholder="e.g. 2023 Ford F-150">
+								</div>
+								<div class="form-group">
+									<label>Vehicle Operability Status</label>
+									<div class="radio-group">
+										<label class="radio-option">
+											<input type="radio" name="operable" value="yes" checked required> Operable (Runs & Drives)
+										</label>
+										<label class="radio-option">
+											<input type="radio" name="operable" value="no"> Non-Operational
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<!-- Date Range Picker with Dynamic Constraints -->
+							<div class="form-row">
+								<div class="form-group">
+									<label for="start_date">Earliest Pickup Date</label>
+									<input type="date" id="start_date" required>
+								</div>
+								<div class="form-group">
+									<label for="end_date">Latest Delivery Date</label>
+									<input type="date" id="end_date" required>
+								</div>
+							</div>
+
+							<!-- Full Addresses -->
+							<div class="form-group">
+								<label for="pickup_address">Full Pickup Street Address (FL Only)</label>
+								<input type="text" id="pickup_address" required placeholder="Street, City, Zip Code">
+							</div>
+
+							<div class="form-group">
+								<label for="dropoff_address">Full Drop-Off Street Address (FL Only)</label>
+								<input type="text" id="dropoff_address" required placeholder="Street, City, Zip Code">
+							</div>
+
+							<!-- Special Notes -->
+							<div class="form-group">
+								<label for="notes">Additional Transport Notes (Optional)</label>
+								<textarea id="notes" rows="3" placeholder="Lowered vehicle, modifications, or specific dispatch requests..."></textarea>
+							</div>
+
+							<button type="submit" class="btn" style="width: 100%;">Submit Booking Request</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-about">
+						<img src="images/banner.svg" alt="Vibrant Hauling Logistics Logo" class="logo-img" onerror="this.onerror=null; this.src='images/logo.png';">
+						<p>Hauling across all of Florida. Primary routes starting in Palm Beach and Martin counties.</p>
+						<p class="footer-creds">
+							USDOT: <strong>4433029</strong> | Address: <strong>1204 Old Okeechobee Rd, West Palm Beach, FL 33401</strong>
+						</p>
+					</div>
+					<div class="footer-contact">
+						<h4>Text or Call</h4>
+						<a href="tel:5614601160" class="contact-link">(561) 460-1160</a>
+						<div class="footer-social" style="margin-top: 1.5rem;">
+							<h4>Instagram</h4>
+							<a href="https://instagram.com/vibrant_hauling_logistics" target="_blank" rel="noopener noreferrer">@vibrant_hauling_logistics</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2026 Vibrant Hauling Logistics LLC. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				// Date Constraints Logic
+				const startDateInput = document.getElementById('start_date');
+				const endDateInput = document.getElementById('end_date');
+				const today = new Date().toISOString().split('T')[0];
+
+				if (startDateInput) {
+					startDateInput.min = today;
+
+					startDateInput.addEventListener('change', function() {
+						const selectedPickupDate = startDateInput.value;
+						endDateInput.min = selectedPickupDate;
+
+						if (endDateInput.value && endDateInput.value < selectedPickupDate) {
+							endDateInput.value = selectedPickupDate;
+						}
+					});
+				}
+
+				// Scrollspy Active Navigation Link Observer
+				const sections = document.querySelectorAll('section[id]');
+				const navLinks = document.querySelectorAll('nav ul li a');
+
+				const observerOptions = {
+					root: null,
+					rootMargin: '-25% 0px -50% 0px',
+					threshold: 0
+				};
+
+				const observer = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							const currentId = entry.target.getAttribute('id');
+							
+							navLinks.forEach(link => {
+								link.classList.remove('active');
+								if (currentId !== 'hero' && link.getAttribute('href') === `#${currentId}`) {
+									link.classList.add('active');
+								}
+							});
+						}
+					});
+				}, observerOptions);
+
+				sections.forEach(section => observer.observe(section));
+			});
+		</script>
+
+	</body>
+</html>
